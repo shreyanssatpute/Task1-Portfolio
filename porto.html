@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Add your custom styles here */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      
+    }
+
+    header {
+      background-color: #5a659e;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      color: azure;
+      
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #D1D3E0;
+    }
+    .r{
+        font-weight: 700;
+        color: white;
+    }
+
+    .q{
+      font-weight: bold;
+    }
+    .x{
+      font-weight: bold;
+      font-family: Georgia, 'Times New Roman', Times, serif;  
+    }
+    .s{
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+    }
+    .a{
+        font-family: 'Courier New', Courier, monospace;
+        
+        
+
+    }
+    .l{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+    .d{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h1, h2, h3 {
+      font-weight: normal;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .b{
+      color: white;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+    .v{
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .r{
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .profile-image img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: 20px;
+      
+      background-color: #D1D3E0;
+      border: #D1D3E0;
+    }
+
+    
+    .about-me {
+      flex: 1;
+      margin-left: 20px;
+      border-radius: 15px;
+      padding: 4px;
+    }
+
+    .about-me h2 {
+      margin-top: 0;
+      padding: 4px;
+      border-radius: 15px;
+    }
+
+    .about-me p {
+      margin-bottom: 10px;
+      border-radius: 15px;
+    }
+
+    .about-me p:last-child {
+      margin-bottom: 0;
+      border-radius: 15px;
+    }
+
+    .flex-container {
+      display: flex;
+      align-items: center;
+    }
+
+    footer {
+      background-color: #222;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    
+
+    .skill {
+      flex: 0 0 calc(50% - 10px);
+      background-color: #D1D3E0;
+;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .project {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: scale(1.1);
+    }
+
+    /* Animation Keyframes */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="container">
+      <br>
+      <br>
+      <br>
+
+      <h1 class="s">I'm Shreyans Satpute</h1>
+      <div class="flex-container">
+        <div class="profile-image">
+          <div class="background-image"></div>
+          <br>
+          <img src="pic.jpg" alt="Your Name">
+        </div>
+        <div class="about-me">
+          <h2 class="a"> Web Development Expertise | Python Mastery | C Proficiency | Passionate About Exploring App Development</h2>
+          
+        </div>
+      </div>
+   
+      
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="x">About Me</h2>
+      <p>My name is Shreyans Satpute, and I am currently pursuing my Bachelor's degree in Information Technology at Shah and Anchor Kutchi Engineering College. I am currently in my second year of studies.</p>
+      <p>I have a strong passion for programming and technology, and I have developed a solid understanding of various programming languages and technologies. I am proficient in Python, which allows me to create efficient and robust solutions for various problems. I also have a good grasp of web development, enabling me to design and develop engaging and user-friendly websites. Additionally, I am well-versed in C programming, which has enhanced my problem-solving skills and low-level programming knowledge.</p>
+      <p>Moreover, I am actively engaged in expanding my knowledge and skills in app development. I am continuously learning and exploring different frameworks and tools to create innovative and user-centric mobile applications.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    
+    <div class="container">
+      
+      <h2 class="d">Skills</h2>
+     
+
+      <br>
+    
+      <div class="skills">
+        <div class="skill">
+          
+          <h3>Web Development</h3>
+          <div class="skill-progress">
+            <div class="progress"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>Python</h3>
+          <div class="skill-progress">
+            <div class="progress"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>C Programming</h3>
+          <div class="skill-progress">
+            <div class="progress"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>App Development</h3>
+          <div class="skill-progress1">
+            <div class="progress"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2 class="v">Projects</h2>
+      <br>
+      <div class="projects">
+        <div class="project">
+            <h3 class="q">Project 1 : Creating An Unit Convertor App in Android Code Studio </h3>
+            <p>UnConv is an App that helps the user to convert One unit value to other such as, converting Centimeters to Inches</p>
+          </div>
+          <div class="project">
+            <h3 class="q">Project 2 : Making Tic-Tac-Toe Game using Python</h3>
+            <p>Classic Game of Tic-Tac-Toe in python that accepts the input of 2 users and marks the marker 'X' or 'O'</p>
+          </div>
+          <div class="project">
+            <h3 class="q">Project 3 : Making of ChatBot Using ChatGPT API </h3>
+            <p>ChatBot is an App based on the API of OPEN-AI that takes user input and responds to the user itself. This App is still in the development stage.</p>
+          </div>
+          <div class="project">
+            <h3 class="q">Project 4 : Employee Management System In Java </h3>
+            <p>Employee Management System is admin based software that maintains the data of employee and is used to manage the leaves, salary and attendance of the employee and is linked with database .</p>
+          </div>
+          <div class="project">
+            <h3 class="q">Project 5 : Employee Management System In python </h3>
+            <p>Employee Management System is admin based software that maintains the data of employee and is used to manage the leaves, salary and attendance of the employee and is linked with database Just made in Python .</p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+ <section id="contact">
+    <div class="container">
+      <div class="background-image"></div>
+      
+      <br>
+      <div class="contact-info">
+        <div class="background-image1"></div>
+        <h2 class="r">Contact</h2>
+        <p>Email: shreyanssatpute@gmail.com</p>
+        <p class="b">LinkedIn: <a href="https://www.linkedin.com/in/shreyans-satpute-739b16246">Shreyans Satpute</a></p>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer>
+    <p>&copy; 2023 Shreyans Satpute. All rights reserved.</p>
+  </footer>
+  <script>
+    // JavaScript code...
+    document.addEventListener('DOMContentLoaded', function() {
+      // Smooth scrolling
+      const links = document.querySelectorAll('nav ul li a');
+      links.forEach(link => {
+        link.addEventListener('click', smoothScroll);
+      });
+
+      function smoothScroll(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: 'smooth'
+        });
+      }
+
+      // Skill progress animation
+      const skills = document.querySelectorAll('.skill-progress .progress');
+      skills.forEach(skill => {
+        const skillProgress = skill.getAttribute('data-progress');
+        skill.style.width = skillProgress;
+      });
+    });
+  </script>
+</body>
+</html>
