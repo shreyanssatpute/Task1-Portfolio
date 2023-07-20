@@ -7,6 +7,32 @@
   <title>Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <style>
+    .texts{
+      text-align: center;
+      font-size: 25px;
+    }
+    .cursor {
+      display: inline-block;
+      vertical-align: middle;
+      width: 10px;
+      height: 24px;
+      background-color: black;
+      animation: blink 0.7s infinite;
+    }
+
+    /* Adjust the cursor color and make it more visible */
+    .cursor {
+      background-color: black;
+    }
+
+    /* Animation for cursor blinking */
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+
   
     /* Add your custom styles here */
     body {
@@ -344,7 +370,12 @@
             <h3 class="q">Project 7 : Creating a "Weather Web App"  </h3>
             <p>WeatherIt is an Interactive web application that allows user to see weather of any specified location entered by the user also it has a feature to get weather information of the current location with a click of a button</p>
           </div>
-          
+          <div class="project">
+            <h3 class="q">Project 8 : Creating a "QR code generator Web App"  </h3>
+            <p>QR-It is an interactive web app that allowes user to generate QR codes for any Text/URL provided and also gives an option to download the image of the QR code on user's device . This web app also maintains the history of previously generated QR codes.</p>
+          </div>
+          <br>
+          <div class="texts" id="text-container">My skills : <span id="text"></span><span class="cursor"></span></div>
       </div>
     </div>
   </section>
@@ -394,6 +425,58 @@
         skill.style.width = skillProgress;
       });
     });
+
+     /* this is the new js */
+    const skills = [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Python",
+      "Android Development",
+      "Node.js",
+      "SQL",
+      "Java",
+      "C Programming",
+      // Add more skills as needed
+    ];
+
+    const textElement = document.getElementById("text");
+    const cursorElement = document.querySelector(".cursor");
+    let currentSkillIndex = 0;
+    let currentCharacterIndex = 0;
+    let isErasing = false;
+
+    function typeText() {
+      const currentSkill = skills[currentSkillIndex];
+      const textToShow = isErasing ? currentSkill.slice(0, currentCharacterIndex) : currentSkill.slice(0, currentCharacterIndex + 1);
+      textElement.textContent = textToShow;
+
+      if (!isErasing) {
+        cursorElement.style.display = 'inline'; // Show cursor while typing
+        currentCharacterIndex++;
+
+        if (currentCharacterIndex > currentSkill.length) {
+          // Delay before starting to erase the text
+          isErasing = true;
+          setTimeout(() => {
+            cursorElement.style.display = 'none'; // Hide cursor before erasing
+            typeText();
+          }, 1000); // Adjust the time before erasing as needed
+        } else {
+          setTimeout(typeText, 100); // Adjust the typing speed as needed
+        }
+      } else {
+        if (currentCharacterIndex === 0) {
+          isErasing = false;
+          currentSkillIndex = (currentSkillIndex + 1) % skills.length;
+        }
+        currentCharacterIndex--;
+        setTimeout(typeText, 50); // Adjust the erasing speed as needed
+      }
+    }
+
+    // Start the typing animation when the page loads
+    typeText();
   </script>
 </body>
 </html>
