@@ -133,7 +133,7 @@
       margin-bottom: 20px;
     }
     .v{
-    
+        font-size: px;
         font-weight: bold;
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
@@ -360,42 +360,44 @@
       <h2 class="v">Projects</h2>
       <br>
       <div class="projects">
-        <div class="project">
-            <h3 class="q">Project 1 : Creating An Unit Convertor App in Android Code Studio </h3>
-            <p>UnConv is an App that helps the user to convert One unit value to other such as, converting Centimeters to Inches</p>
+        
+          <div class="project" onclick="redirectToDesiredSite('https://github.com/shreyanssatpute/UnitCov')">
+              <h3 class="q">Project 1 : Creating An Unit Convertor App in Android Code Studio</h3>
+              <p>UnConv is an App that helps the user to convert One unit value to other such as, converting Centimeters to Inches</p>
           </div>
+
           <br>
-          <div class="project">
+          <div class="project" onclick="redirectToDesiredSite('https://replit.com/@SHREYANS-VAIBHA/Tic-Tac-Toe')">
             <h3 class="q">Project 2 : Making Tic-Tac-Toe Game using Python</h3>
             <p>Classic Game of Tic-Tac-Toe in python that accepts the input of 2 users and marks the marker 'X' or 'O'</p>
           </div>
           <br>
-          <div class="project">
+          <div class="project" onclick="redirectToDesiredSite('desired_url_1')">
             <h3 class="q">Project 3 : Making of ChatBot Using ChatGPT API </h3>
             <p>ChatBot is an App based on the API of OPEN-AI that takes user input and responds to the user itself. This App is still in the development stage.</p>
           </div>
           <br>
-          <div class="project">
+          <div class="project" onclick="redirectToDesiredSite('desired_url_1')">
             <h3 class="q">Project 4 : Employee Management System In Java </h3>
             <p>Employee Management System is admin based software that maintains the data of employee and is used to manage the leaves, salary and attendance of the employee and is linked with database .</p>
           </div>
           <br>
-          <div class="project">
+          <div class="project" onclick="redirectToDesiredSite('desired_url_1')">
             <h3 class="q">Project 5 : Employee Management System In python </h3>
             <p>Employee Management System is admin based software that maintains the data of employee and is used to manage the leaves, salary and attendance of the employee and is linked with database Just made in Python .</p>
           </div>
           <br>
-           <div class="project">
+           <div class="project" onclick="redirectToDesiredSite('https://shreyanssatpute.neocities.org/budget_tracker/')">
             <h3 class="q">Project 6 : Creating a "Budget Tracker"</h3>
              <p> A web app that helps user to track their buget it comes with lots of interactive touches also uses graphs and pie charts to showcase user their transactions.</p>
           </div>
           <br>
-           <div class="project">
+           <div class="project" onclick="redirectToDesiredSite('https://shreyanssatpute.neocities.org/weather/')">
             <h3 class="q">Project 7 : Creating a "Weather Web App"  </h3>
             <p>WeatherIt is an Interactive web application that allows user to see weather of any specified location entered by the user.</p>
           </div>
         <br>
-          <div class="project">
+          <div class="project" onclick="redirectToDesiredSite('https://shreyanssatpute.neocities.org/Qr-It/')">
             <h3 class="q">Project 8 : Creating a "QR code generator Web App"  </h3>
             <p>QR-It is a web app that generates QR codes for any Text/URL provided and also gives an option to download and store history.</p>
           </div>
@@ -403,21 +405,27 @@
 
           
 
-          <div class="project">
+          <div class="project" onclick="redirectToDesiredSite('https://www.figma.com/proto/UKPxWc67q0qUSk6DM19vMs/Kangaroo-Laundry?page-id=0%3A1&type=design&node-id=2-2&viewport=-164%2C186%2C0.15&t=BXZRn29X2I9dQb3E-1&scaling=scale-down&starting-point-node-id=2%3A2&mode=design')">
             <h3 class="q">Project 9 : UI-UX project made for a Laundry delivery service site  </h3>
             <p>"Kangaroo Laundry" is a prototype for a Laundry delivery service site made using figma and aims to give pleasent user experience. </p>
           </div>
           <br>
 
-          <div class="project">
+          <div class="project" onclick="redirectToDesiredSite('https://www.figma.com/proto/wwy1yu2JF4VCZlvMOyzjpB/reddit-clone-but-better?page-id=0%3A1&node-id=1-2&starting-point-node-id=1%3A2&mode=design&t=4MFgq3zx1Eb8zLW1-1')">
             <h3 class="q">Project 10 : Reddit Clone</h3>
             <p>A Reddit clone prototype made using Figma adding new character to Reddit's original design language.</p>
           </div>
           <br>
 
-          <div class="project">
+          <div class="project" onclick="redirectToDesiredSite('https://shreyanssatpute.github.io/background-remover/')">
             <h3 class="q">Project 11 : Remove-It</h3>
             <p>Web app made to remove background of any image provided by the user also gives user an option to download the edited image.Uses API from "remove.bg".</p>
+          </div>
+          <br>
+
+          <div class="project" onclick="redirectToDesiredSite('https://shreyanssatpute.github.io/Flappy-Birdss/')">
+            <h3 class="q">Project 12 : Flappy Bird Game</h3>
+            <p>Flappy bird game made with help of html ,css and js provides an interactive experience to the player with added sound effects to the game</p>
           </div>
           <br>
 
@@ -450,6 +458,15 @@
   </footer>
   
   <script>
+
+
+    function redirectToDesiredSite(url) {
+        window.location.href = url;
+    }
+
+
+
+
     // JavaScript code...
     document.addEventListener('DOMContentLoaded', function() {
       // Smooth scrolling
